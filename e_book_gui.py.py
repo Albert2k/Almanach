@@ -7,7 +7,6 @@ import e_book_def_einlesen
 import e_book_def_auswertung
 
 
-
 class Example(QWidget):
     
     def __init__(self):
