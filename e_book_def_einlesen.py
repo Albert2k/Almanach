@@ -28,11 +28,11 @@ def rohdaten_einlesen_verarbeiten(ws_rohdaten):
 
 	daten_diff = []
 	for i in range(len(daten_open)):
-		daten_diff = daten_diff + [round((daten_close[i] - daten_open[i])/daten_open[i]*100,2)]
+		daten_diff = daten_diff + [round((daten_close[i] - daten_open[i])/daten_open[i]*100,4)]
 
 	daten_schw = []
 	for i in range(len(daten_high)):
-		daten_schw = daten_schw + [round((daten_high[i] - daten_low[i])/daten_open[i]*100,2)]
+		daten_schw = daten_schw + [round((daten_high[i] - daten_low[i])/daten_open[i]*100,4)]
 
 
 
@@ -50,3 +50,4 @@ def spalte_einlesen(ws_rohdaten, spalte_name, name):
 	spalten_wert.remove(name)
 
 	return spalten_wert
+	
